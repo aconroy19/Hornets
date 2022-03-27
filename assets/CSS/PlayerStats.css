@@ -1,0 +1,44 @@
+body{
+  background-color: #72b3f6;
+}
+
+#header {
+  margin-left: 20%;
+}
+
+.header-text{
+  font-size: 60px;
+  margin-top: auto;
+  display: inline-block;
+}
+
+.top {
+  font-size: 100px;
+  margin-top: auto;
+  margin-left: 100%;
+  display: inline-block;
+}
+
+.search input[type=text] {
+  padding: 6px;
+  border: none;
+  margin-left: 20%;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  width: 400px;
+
+
+
+  background-image: url('./assets/images/search.svg');
+  /* Add a search icon to input */
+  background-position: right;
+  /* Position the search icon */
+  background-repeat: no-repeat;
+  /* Do not repeat the icon image */
+}
+
+#left {
+  width: 50%;
+  display: inline-block;
+}
