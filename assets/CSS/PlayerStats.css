@@ -12,6 +12,12 @@ body{
   display: inline-block;
 }
 
+#logo {
+  vertical-align: middle;
+  width: 6.5%;
+  height: 6.5%;
+}
+
 .top {
   font-size: 100px;
   margin-top: auto;
@@ -27,18 +33,8 @@ body{
   margin-right: 16px;
   font-size: 17px;
   width: 400px;
-
-
-
-  background-image: url('./assets/images/search.svg');
-  /* Add a search icon to input */
-  background-position: right;
-  /* Position the search icon */
-  background-repeat: no-repeat;
-  /* Do not repeat the icon image */
 }
-
-#left {
-  width: 50%;
-  display: inline-block;
+.values {
+    display: flex;
+    position: relative;
 }

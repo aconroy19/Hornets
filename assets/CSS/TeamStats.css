@@ -1,0 +1,19 @@
+body{
+  background-color: #72b3f6;
+}
+
+#header {
+  margin-left: 20%;
+}
+
+.header-text{
+  font-size: 60px;
+  margin-top: auto;
+  display: inline-block;
+}
+
+#logo {
+  vertical-align: middle;
+  width: 6.5%;
+  height: 6.5%;
+}

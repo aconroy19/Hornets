@@ -12,6 +12,12 @@ body{
   display: inline-block;
 }
 
+#logo {
+  vertical-align: middle;
+  width: 6.5%;
+  height: 6.5%;
+}
+
 .left-button{
   display: block;
   background-color: #07124a;
