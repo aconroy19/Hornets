@@ -35,6 +35,10 @@ body{
   width: 400px;
 }
 .values {
-    display: flex;
-    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.statsRow {
+  display: -webkit-box;
 }
