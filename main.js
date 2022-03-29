@@ -8,6 +8,10 @@ function setup() {
     openwebpage("./assets/HTML/PlayerStats.html");
   };
 
+  document.getElementById("button_team").onclick = function(){
+    openwebpage("./assets/HTML/TeamStats.html");
+  };
+
 }
 
 function openwebpage(url){
@@ -17,7 +21,7 @@ function openwebpage(url){
 function search() {
 
   search_stuff = null;
-  
+
 }
 
 setup();
