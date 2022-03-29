@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <link rel="stylesheet" href="..\CSS\PlayerStats.css">
   <title>NR Hornets Stats</title>
@@ -9,7 +8,7 @@
 <body>
   <div id="header">
     <h1 class="header-text"> NR </h1>
-    <img id="logo" src="../images/hornetslogo.png"/>
+    <img id="logo" src="../images/hornetslogo.png" />
     <h1 class="header-text"> Hornets Stats </h1>
     <div id="buttons">
     </div>
@@ -17,50 +16,61 @@
   <hr>
   <!–– up to here is the header of the webpage, everything below here goes into a different div ––>
 
-<div id ="top">
-  <h1>Player Stats</h1>
-</div>
-
-  <div id="left">
-
-    <div class="search">
-      <input type="text" placeholder="Search..">
-    </div>
-    <div>
-    <div id="key">
-      <h1>KEY</h1>
-      <h2> SOG: Shots On Goal </h2>
-      <h2> GS: Goals Scored </h2>
-      <h2> ASST: Assists </h2>
-      <h2> PASS: Successful Passes </h2>
-      <h2> DS: Defensive Stops </h2>
-      <h2> STL: Steals </h2>
-      <h2> CLR: Clears </h2>
-    </div>
-    <div id="stats">
-      <div class="statsRow">
-        <h2> SOG: </h2>
-        <h2 id="valueSOG" class="values"> 999 </h2>
-        <h2> GS: </h2>
-        <h2 id="valueGS" class="values"> 999 </h2>
-        <h2> ASST: </h2>
-        <h2 id="valueASST" class="values"> 999 </h2>
-        <h2> PASS: </h2>
-        <h2 id="valuePASS" class="values"> 999 </h2>
-      </div>
-      <div class="statsRow">
-        <h2> DS: </h2>
-        <h2 id="valueDS" class="values"> 999 </h2>
-        <h2> STL: </h2>
-        <h2 id="valueSTL" class="values"> 999 </h2>
-        <h2> CLR: </h2>
-        <h2 id="valueCLR" class="values"> 999 </h2>
-      </div>
-      </div>
+    <div id="top">
+      <h1>Player Stats</h1>
     </div>
 
 
+      <div class="search">
+        <input type="text" placeholder="Search..">
+      </div>
 
+      <div id="center">
+        <div id="key">
+          <h1 id="key_text" >KEY</h1>
+          <div class="statsRow">
+            <h2> SOG: Shots On Goal </h2>
+            <h2> GS: Goals Scored </h2>
+            <h2> ASST: Assists </h2>
+          </div>
+          <div class="statsRow">
+            <h2> PASS: Successful Passes </h2>
+            <h2> DS: Defensive Stops </h2>
+            <h2> STL: Steals </h2>
+            <h2> CLR: Clears </h2>
+          </div>
+        </div>
+        <div id="stats">
+
+          <h1 id="name"> Alex O'Higgins</h2>
+          <div class="statsRow">
+            <h2> SOG: </h2>
+            <h2 id="valueSOG" class="values"> 000 </h2>
+            <h2> GS: </h2>
+            <h2 id="valueGS" class="values"> 000 </h2>
+            <h2> ASST: </h2>
+            <h2 id="valueASST" class="values"> 000 </h2>
+            <h2> PASS: </h2>
+            <h2 id="valuePASS" class="values"> 000 </h2>
+          </div>
+          <div class="statsRow">
+            <h2> DS: </h2>
+            <h2 id="valueDS" class="values"> 000 </h2>
+            <h2> STL: </h2>
+            <h2 id="valueSTL" class="values"> 000 </h2>
+            <h2> CLR: </h2>
+            <h2 id="valueCLR" class="values"> 000 </h2>
+            <h2> FLS: </h2>
+            <h2 id="valueFLS" class="values"> 000 </h2>
+          </div>
+        </div>
+      </div>
+
+      <div id="button_div">
+        <button id="button_random_values" type="button" > Random Values </button>
+      </div>
+
+    <script src="../scripts/PlayerStats.js" charset="utf-8"></script>
 </body>
 
 
