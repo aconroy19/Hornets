@@ -6,7 +6,7 @@ body{
   margin-left: 20%;
 }
 
-.header-text{
+.header-text {
   font-size: 60px;
   margin-top: auto;
   display: inline-block;
@@ -41,4 +41,9 @@ body{
 
 .statsRow {
   display: -webkit-box;
+}
+
+#key {
+  text-align: right;
+  display: inline-block;
 }
