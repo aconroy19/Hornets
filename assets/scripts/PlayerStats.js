@@ -1,15 +1,11 @@
-// IGNORE THIS CODE IF YOU'RE CHECKING IF LINKED. ONLY USE THE BOTTOM ONE
+var fall2021 = null;
+$.getJSON("https://aconroy19.github.io/Hornets/json/Fall2021.json", function(json) {
+  fall2021 = json;
+  });
 
 function setup() {
 
-  document.getElementById("button_random_values").onclick = randomValues;
-
-
-
-  // document.getElementById("button1").onclick = function(){
-  //   openwebpage("./assets/HTML/PlayerStats.html");
-  // };
-
+  document.getElementById("button_next").onclick = nextPlayer;
 
 }
 
@@ -23,26 +19,55 @@ function search() {
 
 }
 
-function randomValues() {
-
+function updateValues(p){
   let elements = document.getElementsByClassName("values");
 
-  Array.prototype.forEach.call(elements, function(value){
-    value.innerHTML = Math.round(Math.random()*1000);
+  document.getElementById("name").innerText = p.name + " " + p.last_name;
+
+  elements.valueSOG.innerText = p.sog;
+  elements.valueGS.innerText = p.gs;
+  elements.valueASST.innerText = p.assists;
+  elements.valuePASS.innerText = p.pass;
+  elements.valueDS.innerText = p.ds;
+  elements.valueSTL.innerText = p.steal;
+  elements.valueCLR.innerText = p.clear;
+  elements.valueFLS.innerText = p.fouls;
+  elements.player_id.innerText = p.id;
+
+
+  if(p.fouls >= 5){
+    elements.valueFLS.style.background = "#f20d0d";
+  }
+  else{
+    elements.valueFLS.style.background = "#f086d5";
+  }
+
+}
+
+function getPlayerById(id){
+  let p;
+  fall2021.forEach(player=>{
+    if(player.id == id){
+      p = player;
+    }
   });
+
+  return p;
+}
+
+function nextPlayer() {
+
+  let id = parseInt(document.getElementById("player_id").textContent);
+  if(id + 1 > 16){
+    id = -1;
+  }
+  document.getElementById("player_id").innerText = id + 1;
+  let p = getPlayerById(id + 1);
+
+
+  updateValues(p);
+
 
 }
 
 setup();
-
-
-// USE THIS CODE IF YOU WANNA KNOW IF SOMETHING IS LINKED
-
-// OPEN THE INSPECTOR AND GO TO CONSOLE (FN + F12 -> Console) AND SEE IF IT SAYS
-// HELLO IN THERE OR NOT
-
-function onload(){
-  console.log("HELLO I'M LINKED");
-}
-
-onload();

@@ -39,6 +39,8 @@ body{
     padding-right: 10px;
     background-color: #f086d5;
     color: #1d1d1d;
+    width: 5.5%;
+    text-align: right;
 }
 
 .statsRow {
@@ -86,7 +88,7 @@ h2 {
   margin-left: 10%;
 }
 
-#button_random_values {
+#button_next {
 
   background-color: #07124a;
   border: 2px solid #07124a;
