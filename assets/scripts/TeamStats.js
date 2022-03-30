@@ -6,7 +6,7 @@
 
 //setup();//
 
-function onload(){
+function onload() {
   console.log("HELLO I'M LINKED");
 }
 
