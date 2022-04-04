@@ -2,17 +2,17 @@ var fall2021 = null;
 $.getJSON("https://aconroy19.github.io/Hornets/json/Fall2021.json", function(json) {
   fall2021 = json;
   });
-
+// pulls stats from the json file
 function setup() {
 
   document.getElementById("button_next").onclick = nextPlayer;
-
+// function to have the button move to the next player consecutively
 }
 
 function openwebpage(url){
   window.open(url, "_self");
 }
-
+// opens url in the same tab
 function search() {
 
   search_stuff = null;
@@ -21,9 +21,9 @@ function search() {
 
 function updateValues(p){
   let elements = document.getElementsByClassName("values");
-
+//
   document.getElementById("name").innerText = p.name + " " + p.last_name;
-
+// displays the name of the player
   elements.valueSOG.innerText = p.sog;
   elements.valueGS.innerText = p.gs;
   elements.valueASST.innerText = p.assists;
@@ -33,7 +33,7 @@ function updateValues(p){
   elements.valueCLR.innerText = p.clear;
   elements.valueFLS.innerText = p.fouls;
   elements.player_id.innerText = p.id;
-
+// returns elements of the specified stat
 
   if(p.fouls >= 5){
     elements.valueFLS.style.background = "#f20d0d";
@@ -41,7 +41,7 @@ function updateValues(p){
   else{
     elements.valueFLS.style.background = "#f086d5";
   }
-
+// displays the fouls highlighted in red if value is 5 or more
 }
 
 function getPlayerById(id){
@@ -61,6 +61,7 @@ function nextPlayer() {
   if(id + 1 > 16){
     id = -1;
   }
+  // creates the nextPlayer function
   document.getElementById("player_id").innerText = id + 1;
   let p = getPlayerById(id + 1);
 

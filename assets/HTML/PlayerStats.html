@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <link rel="stylesheet" href="..\CSS\PlayerStats.css">
+  <! links the css file to the html––>
   <title>NR Hornets Stats</title>
 </head>
 
@@ -10,11 +11,12 @@
     <h1 class="header-text"> NR </h1>
     <img id="logo" src="../images/hornetslogo.png" />
     <h1 class="header-text"> Hornets Stats </h1>
+
     <div id="buttons">
     </div>
   </div>
   <hr>
-  <!–– up to here is the header of the webpage, everything below here goes into a different div ––>
+  <!header––>
 
     <div id="top">
       <h1>Player Stats</h1>
@@ -25,6 +27,8 @@
         <input type="text" placeholder="Search..">
       </div>
 
+      <!search bar––>
+
       <div id="center">
         <div id="key">
           <h1 id="key_text" >KEY</h1>
@@ -33,13 +37,16 @@
             <h2> GS: Goals Scored </h2>
             <h2> ASST: Assists </h2>
           </div>
+          <!first row of stats––>
           <div class="statsRow">
             <h2> PASS: Successful Passes </h2>
             <h2> DS: Defensive Stops </h2>
             <h2> STL: Steals </h2>
             <h2> CLR: Clears </h2>
           </div>
+          <!second row of stats––>
         </div>
+        <!this is the KEY ––>
         <div id="stats">
 
           <h1 id="name"> Alexandra Benvenuto </h2>
@@ -65,14 +72,19 @@
             <h2 id="player_id" class="values" hidden=true> 0 </h2>
           </div>
         </div>
+        <!display begins with first player (Alexandra) ––>
       </div>
 
       <div id="button_div">
         <button id="button_next" type="button" > Next Player </button>
       </div>
 
+      <!button that will change display to the stats of the next consecutive player ––>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <!imports jquery in js file ––>
     <script src="../scripts/PlayerStats.js" charset="utf-8"></script>
+    <!links PlayerStats.js ––>
 </body>
 
 

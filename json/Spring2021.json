@@ -1,0 +1,257 @@
+[
+  {
+
+    "id": 0,
+    "name": "Alexandra",
+    "last_name": "Benvenuto",
+    "sog": 12,
+    "gs": 4,
+    "assists": 5,
+    "pass": 169,
+    "ds": 311,
+    "steal": 204,
+    "clear": 14,
+    "fouls": 1
+  },
+
+  {
+
+    "id": 1,
+    "name": "Lucy",
+    "last_name": "Branti",
+    "sog": 5,
+    "gs": 1,
+    "assists": 2,
+    "pass": 38,
+    "ds": 139,
+    "steal": 58,
+    "clear": 37,
+    "fouls": 1
+  },
+
+  {
+
+    "id": 2,
+    "name": "Madeline",
+    "last_name": "Clark",
+    "sog": 24,
+    "gs": 3,
+    "assists": 2,
+    "pass": 98,
+    "ds": 390,
+    "steal": 209,
+    "clear": 126,
+    "fouls": 9
+  },
+
+  {
+
+    "id": -1,
+    "name": "Gabby",
+    "last_name": "Coelho",
+    "sog": 1,
+    "gs": 1,
+    "assists": 0,
+    "pass": 69,
+    "ds": 101,
+    "steal": 140,
+    "clear": 5,
+    "fouls": 1
+  },
+
+  {
+
+    "id": -1,
+    "name": "Mary",
+    "last_name": "Colaco",
+    "sog": 0,
+    "gs": 0,
+    "assists": 0,
+    "pass": 105,
+    "ds": 244,
+    "steal": 111,
+    "clear": 24,
+    "fouls": 1
+  },
+
+  {
+
+    "id": 5,
+    "name": "Isabella",
+    "last_name": "DeBacco",
+    "sog": 0,
+    "gs": 0,
+    "assists": 1,
+    "pass": 33,
+    "ds": 109,
+    "steal": 46,
+    "clear": 10,
+    "fouls": 0
+  },
+
+  {
+
+    "id": 6,
+    "name": "Jane",
+    "last_name": "DeSimone",
+    "sog": 15,
+    "gs": 5,
+    "assists": 4,
+    "pass": 83,
+    "ds": 70,
+    "steal": 96,
+    "clear": 3,
+    "fouls": 1
+  },
+
+  {
+
+    "id": 7,
+    "name": "Grace",
+    "last_name": "Gavigan",
+    "sog": 9,
+    "gs": 1,
+    "assists": 4,
+    "pass": 109,
+    "ds": 245,
+    "steal": 111,
+    "clear": 40,
+    "fouls": 1
+  },
+
+  {
+
+    "id": 8,
+    "name": "Kylie",
+    "last_name": "Harm",
+    "sog": 44,
+    "gs": 13,
+    "assists": 12,
+    "pass": 176,
+    "ds": 170,
+    "steal": 228,
+    "clear": 41,
+    "fouls": 3
+  },
+
+  {
+
+    "id": 9,
+    "name": "Meghan",
+    "last_name": "Higgins",
+    "sog": 9,
+    "gs": 1,
+    "assists": 3,
+    "pass": 46,
+    "ds": 116,
+    "steal": 64,
+    "clear": 20,
+    "fouls": 6
+  },
+
+  {
+
+    "id": 10,
+    "name": "Daniella",
+    "last_name": "Mair",
+    "sog": 24,
+    "gs": 3,
+    "assists": 10,
+    "pass": 192,
+    "ds": 306,
+    "steal": 310,
+    "clear": 70,
+    "fouls": 3
+  },
+
+  {
+
+    "id": 11,
+    "name": "Teagan",
+    "last_name": "McGovern",
+    "sog": 76,
+    "gs": 33,
+    "assists": 4,
+    "pass": 158,
+    "ds": 120,
+    "steal": 222,
+    "clear": 19,
+    "fouls": 3
+  },
+
+  {
+
+    "id": 12,
+    "name": "Sofia",
+    "last_name": "Morales",
+    "sog": 11,
+    "gs": 2,
+    "assists": 3,
+    "pass": 150,
+    "ds": 420,
+    "steal": 221,
+    "clear": 130,
+    "fouls": 0
+  },
+
+  {
+
+    "id": 13,
+    "name": "Morgan",
+    "last_name": "Satchell",
+    "sog": 5,
+    "gs": 1,
+    "assists": 1,
+    "pass": 122,
+    "ds": 455,
+    "steal": 212,
+    "clear": 142,
+    "fouls": 6
+  },
+
+  {
+
+    "id": -1,
+    "name": "Paige",
+    "last_name": "Wanamaker",
+    "sog": 4,
+    "gs": 2,
+    "assists": 0,
+    "pass": 17,
+    "ds": 20,
+    "steal": 41,
+    "clear": 1,
+    "fouls": 0
+  },
+
+  {
+
+    "id": 15,
+    "name": "Megan",
+    "last_name": "Whelan",
+    "sog": 28,
+    "gs": 9,
+    "assists": 4,
+    "pass": 92,
+    "ds": 167,
+    "steal": 105,
+    "clear": 73,
+    "fouls": 2
+  },
+
+  {
+
+    "id": -1,
+    "name": "Ayla",
+    "last_name": "Wilson",
+    "sog": 7,
+    "gs": 3,
+    "assists": 3,
+    "pass": 115,
+    "ds": 295,
+    "steal": 303,
+    "clear": 11,
+    "fouls": 4
+  }
+
+]

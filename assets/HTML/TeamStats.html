@@ -3,6 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="..\CSS\TeamStats.css">
+  <!links the html to the css––>
   <title>NR Hornets Stats</title>
 </head>
 
@@ -22,16 +23,24 @@
   <h1>Player Stats</h1>
 </div>
 
-<div id="key">
-  <h1>KEY</h1>
-  <h2> SOG: Shots On Goal </h2>
-  <h3> GS: Goals Scored </h3>
-  <h4> ASST: Assists </h4>
-  <h5> PASS: Successful Passes </h5>
-  <h6> DS: Defensive Stops </h6>
-  <h7> STL: Steals </h7>
-  <h8> CLR: Clears </h8>
-</div>
+<div id="center">
+  <div id="key">
+    <h1 id="key_text" >KEY</h1>
+    <div class="statsRow">
+      <h2> SOG: Shots On Goal </h2>
+      <h2> GS: Goals Scored </h2>
+      <h2> ASST: Assists </h2>
+    </div>
+    <!first row of stats––>
+    <div class="statsRow">
+      <h2> PASS: Successful Passes </h2>
+      <h2> DS: Defensive Stops </h2>
+      <h2> STL: Steals </h2>
+      <h2> CLR: Clears </h2>
+    </div>
+    <!second row of stats––>
+  </div>
+  <!this is the KEY ––>
 
 <div id="table">
 <table>
@@ -53,6 +62,7 @@
   </tr>
 
   <script src="../scripts/TeamStats.js" charset="utf-8"></script>
+  <!links teamstats page to homepage ––>
 </body>
 
 
