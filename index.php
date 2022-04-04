@@ -38,6 +38,11 @@
 
     <script src="main.js" charset="utf-8"></script>
     <! links main.js––>
+
+    <div class="footer">
+      <?php include 'include/header.php'; ?>
+    </div>
+    <! adds a footer––> 
 </body>
 
 
