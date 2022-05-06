@@ -1,4 +1,4 @@
-body{
+body {
   background-color: #72b3f6;
 }
 
@@ -6,7 +6,7 @@ body{
   margin-left: 20%;
 }
 
-.header-text{
+.header-text {
   font-size: 60px;
   margin-top: auto;
   display: inline-block;
@@ -23,4 +23,76 @@ body{
   margin-top: auto;
   margin-left: 100%;
   display: inline-block;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #07124a;
+  display: inline-flex;
+  margin-left: 78%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #a5e3fa;
+  color: black;
+}
+
+.topnav a:hover #stats {
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #f7df5e;
+  color: black;
+}
+
+#stats {
+  vertical-align: middle;
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(137deg) brightness(104%) contrast(101%);
+}
+
+#roster {
+  border: 5px solid black;
+  display: inline-block;
+  float: right;
+  padding: 5px 20px;
+  background-color: #ffea7a;
+  margin-top: 5%;
+  width: 25%;
+  text-align: left;
+}
+
+#staff {
+  padding: 5px 20px;
+  border: 5px solid black;
+  display: inline-block;
+  background-color: #f086d5;
+  margin-top: 5%;
+  text-align: left;
+}
+
+#container {
+  text-align: center;
+  font-size: 20px;
+}
+
+.title {
+  font-size: 22px;
+}
+
+#text {
+  text-align: left;
 }

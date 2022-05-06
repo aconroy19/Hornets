@@ -13,11 +13,30 @@ function openwebpage(url){
   window.open(url, "_self");
 }
 // opens url in the same tab
-function search() {
 
-  search_stuff = null;
+ let topnavbuttons = document.getElementsByClassName("inactive");
+   [].forEach.call(topnavbuttons, function(button) {
+   button.onclick = function(){
+     openwebpage(button.id + ".html");
+   }
+   } );
 
+  let players = document.getElementById("search_div").getElementsByTagName("a");
+  [].forEach.call(players, function(player){
+    player.onclick = function(){
+      updateValues(getPlayerById(player.id));
+      document.getElementById("search").value = player.innerText;
+      for(let i = 0; i < players.length; i++){
+        players[i].style.display = "none";
+      }
+    }
+  })
+
+// opens url in the same tab
+function openwebpage(url){
+  window.open(url, "_self");
 }
+
 
 function updateValues(p){
   let elements = document.getElementsByClassName("values");
@@ -69,6 +88,27 @@ function nextPlayer() {
   updateValues(p);
 
 
+}
+
+function filter() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("search");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("search_div");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "block";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+  if(input.value.toUpperCase().length <= 0){
+    for(i = 0; i < a.length; i++){
+      a[i].style.display = "none";
+    }
+  }
 }
 
 setup();

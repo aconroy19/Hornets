@@ -7,6 +7,13 @@
 </head>
 
 <body>
+  <div class="topnav">
+       <a class="inactive" id="../../index">Home</a>
+       <a class="active" id="PlayerStats">Players <img id="stats_table" src="../../assets/images/table.svg"></a>
+       <a class="inactive" id="TeamStats">Team <img id="stats_table" src="../../assets/images/table.svg"></a>
+       <a class="inactive" id="About">About</a>
+  </div>
+
   <div id="header">
     <h1 class="header-text"> NR </h1>
     <img id="logo" src="../images/hornetslogo.png" />
@@ -23,8 +30,27 @@
     </div>
 
 
-      <div class="search">
-        <input type="text" placeholder="Search..">
+      <div id="search_div">
+        <input id="search" type="text" placeholder="Search.." onkeyup="filter()">
+        <div id="absolute_div">
+          <a class="player" id=0>Alexandra Benvenuto</a>
+          <a class="player" id=1>Lucy Branti</a>
+          <a class="player" id=2>Madeline Clark</a>
+          <a class="player" id=3>Gabby Coelho</a>
+          <a class="player" id=4>Mary Colaco</a>
+          <a class="player" id=5>Isabella DeBacco</a>
+          <a class="player" id=6>Jane DeSimone</a>
+          <a class="player" id=7>Grace Gavigan</a>
+          <a class="player" id=8>Kylie Harm</a>
+          <a class="player" id=9>Meghan Higgins</a>
+          <a class="player" id=10>Daniella Mair</a>
+          <a class="player" id=11>Teagan McGovern</a>
+          <a class="player" id=12>Sofia Morales</a>
+          <a class="player" id=13>Morgan Satchell</a>
+          <a class="player" id=14>Paige Wanamaker</a>
+          <a class="player" id=15>Megan Whelan</a>
+          <a class="player" id=16>Ayla Wilson</a>
+        </div>
       </div>
 
       <!search bar––>

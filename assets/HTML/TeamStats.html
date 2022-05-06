@@ -8,6 +8,14 @@
 </head>
 
 <body>
+
+  <div class="topnav">
+       <a class="inactive" id="../../index">Home</a>
+       <a class="inactive" id="PlayerStats">Players <img id="stats" src="../../assets/images/table.svg"></a>
+       <a class="active" id="TeamStats">Team <img id="stats" src="../../assets/images/table.svg"></a>
+       <a class="inactive" id="About">About</a>
+  </div>
+
   <div id="header">
     <h1 class="header-text"> NR </h1>
     <img id="logo" src="../images/hornetslogo.png"/>
@@ -20,7 +28,15 @@
   <!–– up to here is the header of the webpage, everything below here goes into a different div ––>
 
 <div id ="top">
-  <h1>Team Stats</h1>
+
+  <div class="dropdown">
+    <button class="dropbtn">Team Stats</button>
+    <div class="dropdown-content">
+      <a href="#" id="fall2020" class="season">Fall 2020</a>
+      <a href="#" id="fall2021" class="season">Fall 2021</a>
+      <a href="#" id="spring2021" class="season">Spring 2021</a>
+    </div>
+  </div>
 </div>
 
 <div id="center">
@@ -43,9 +59,9 @@
   <!this is the KEY ––>
 
 <div id="table">
-  <table>
+  <table id="stats_tb">
     <tr>
-      <th>Name</th>
+      <th><h2 style="position: absolute; margin-top: -1%; margin-left: 3%;">Name</h2></th>
       <th>SOG</th>
       <th>GS</th>
       <th>ASST</th>
@@ -57,57 +73,194 @@
     </tr>
     <tr>
       <td>Alexandra Benvenuto</td>
+      <th class="value" id="sog">0</th>
+      <th class="value" id="gs">0</th>
+      <th class="value" id="assists">0</th>
+      <th class="value" id="pass">0</th>
+      <th class="value" id="ds">0</th>
+      <th class="value" id="steal">0</th>
+      <th class="value" id="clear">0</th>
+      <th class="value" id="fouls">0</th>
     </tr>
     <tr>
       <td>Lucy Branti</td>
+      <th class="value" id="sog">0</th>
+      <th class="value" id="gs">0</th>
+      <th class="value" id="assists">0</th>
+      <th class="value" id="pass">0</th>
+      <th class="value" id="ds">0</th>
+      <th class="value" id="steal">0</th>
+      <th class="value" id="clear">0</th>
+      <th class="value" id="fouls">0</th>
     </tr>
     <tr>
       <td>Madeline Clark</td>
+      <th class="value" id="sog">0</th>
+      <th class="value" id="gs">0</th>
+      <th class="value" id="assists">0</th>
+      <th class="value" id="pass">0</th>
+      <th class="value" id="ds">0</th>
+      <th class="value" id="steal">0</th>
+      <th class="value" id="clear">0</th>
+      <th class="value" id="fouls">0</th>
     </tr>
     <tr>
       <td>Gabby Coelho</td>
+      <th class="value" id="sog">0</th>
+      <th class="value" id="gs">0</th>
+      <th class="value" id="assists">0</th>
+      <th class="value" id="pass">0</th>
+      <th class="value" id="ds">0</th>
+      <th class="value" id="steal">0</th>
+      <th class="value" id="clear">0</th>
+      <th class="value" id="fouls">0</th>
     </tr>
     <tr>
       <td>Mary Colaco</td>
+      <th class="value" id="sog">0</th>
+      <th class="value" id="gs">0</th>
+      <th class="value" id="assists">0</th>
+      <th class="value" id="pass">0</th>
+      <th class="value" id="ds">0</th>
+      <th class="value" id="steal">0</th>
+      <th class="value" id="clear">0</th>
+      <th class="value" id="fouls">0</th>
     </tr>
     <tr>
       <td>Isabella DeBacco</td>
+      <th class="value" id="sog">0</th>
+      <th class="value" id="gs">0</th>
+      <th class="value" id="assists">0</th>
+      <th class="value" id="pass">0</th>
+      <th class="value" id="ds">0</th>
+      <th class="value" id="steal">0</th>
+      <th class="value" id="clear">0</th>
+      <th class="value" id="fouls">0</th>
     </tr>
     <tr>
       <td>Jane DeSimone</td>
+      <th class="value" id="sog">0</th>
+      <th class="value" id="gs">0</th>
+      <th class="value" id="assists">0</th>
+      <th class="value" id="pass">0</th>
+      <th class="value" id="ds">0</th>
+      <th class="value" id="steal">0</th>
+      <th class="value" id="clear">0</th>
+      <th class="value" id="fouls">0</th>
     </tr>
     <tr>
       <td>Grace Gavigan</td>
+      <th class="value" id="sog">0</th>
+      <th class="value" id="gs">0</th>
+      <th class="value" id="assists">0</th>
+      <th class="value" id="pass">0</th>
+      <th class="value" id="ds">0</th>
+      <th class="value" id="steal">0</th>
+      <th class="value" id="clear">0</th>
+      <th class="value" id="fouls">0</th>
     </tr>
     <tr>
       <td>Kylie Harm</td>
+      <th class="value" id="sog">0</th>
+      <th class="value" id="gs">0</th>
+      <th class="value" id="assists">0</th>
+      <th class="value" id="pass">0</th>
+      <th class="value" id="ds">0</th>
+      <th class="value" id="steal">0</th>
+      <th class="value" id="clear">0</th>
+      <th class="value" id="fouls">0</th>
     </tr>
     <tr>
       <td>Meghan Higgins</td>
+      <th class="value" id="sog">0</th>
+      <th class="value" id="gs">0</th>
+      <th class="value" id="assists">0</th>
+      <th class="value" id="pass">0</th>
+      <th class="value" id="ds">0</th>
+      <th class="value" id="steal">0</th>
+      <th class="value" id="clear">0</th>
+      <th class="value" id="fouls">0</th>
     </tr>
     <tr>
       <td>Daniella Mair</td>
+      <th class="value" id="sog">0</th>
+      <th class="value" id="gs">0</th>
+      <th class="value" id="assists">0</th>
+      <th class="value" id="pass">0</th>
+      <th class="value" id="ds">0</th>
+      <th class="value" id="steal">0</th>
+      <th class="value" id="clear">0</th>
+      <th class="value" id="fouls">0</th>
     </tr>
     <tr>
       <td>Teagan McGovern</td>
+      <th class="value" id="sog">0</th>
+      <th class="value" id="gs">0</th>
+      <th class="value" id="assists">0</th>
+      <th class="value" id="pass">0</th>
+      <th class="value" id="ds">0</th>
+      <th class="value" id="steal">0</th>
+      <th class="value" id="clear">0</th>
+      <th class="value" id="fouls">0</th>
     </tr>
     <tr>
       <td>Sofia Morales</td>
+      <th class="value" id="sog">0</th>
+      <th class="value" id="gs">0</th>
+      <th class="value" id="assists">0</th>
+      <th class="value" id="pass">0</th>
+      <th class="value" id="ds">0</th>
+      <th class="value" id="steal">0</th>
+      <th class="value" id="clear">0</th>
+      <th class="value" id="fouls">0</th>
     </tr>
     <tr>
       <td>Morgan Satchell</td>
+      <th class="value" id="sog">0</th>
+      <th class="value" id="gs">0</th>
+      <th class="value" id="assists">0</th>
+      <th class="value" id="pass">0</th>
+      <th class="value" id="ds">0</th>
+      <th class="value" id="steal">0</th>
+      <th class="value" id="clear">0</th>
+      <th class="value" id="fouls">0</th>
     </tr>
     <tr>
       <td>Paige Wanamaker</td>
+      <th class="value" id="sog">0</th>
+      <th class="value" id="gs">0</th>
+      <th class="value" id="assists">0</th>
+      <th class="value" id="pass">0</th>
+      <th class="value" id="ds">0</th>
+      <th class="value" id="steal">0</th>
+      <th class="value" id="clear">0</th>
+      <th class="value" id="fouls">0</th>
     </tr>
     <tr>
       <td>Megan Whelan</td>
+      <th class="value" id="sog">0</th>
+      <th class="value" id="gs">0</th>
+      <th class="value" id="assists">0</th>
+      <th class="value" id="pass">0</th>
+      <th class="value" id="ds">0</th>
+      <th class="value" id="steal">0</th>
+      <th class="value" id="clear">0</th>
+      <th class="value" id="fouls">0</th>
     </tr>
     <tr>
       <td>Ayla Wilson</td>
+      <th class="value" id="sog">0</th>
+      <th class="value" id="gs">0</th>
+      <th class="value" id="assists">0</th>
+      <th class="value" id="pass">0</th>
+      <th class="value" id="ds">0</th>
+      <th class="value" id="steal">0</th>
+      <th class="value" id="clear">0</th>
+      <th class="value" id="fouls">0</th>
     </tr>
   </table>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script src="../scripts/TeamStats.js" charset="utf-8"></script>
   <!links teamstats page to homepage ––>
 </body>

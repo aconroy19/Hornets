@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="..\CSS\NewStats.css">
+  <!links the html to the ––>
+  <title>NR Hornets Stats</title>
+</head>
+
+<body>
+
+  <div class="topnav">
+       <a class="inactive" id="../../index">Home</a>
+       <a class="inactive" id="PlayerStats">Players <img id="stats" src="../../assets/images/table.svg"></a>
+       <a class="active" id="TeamStats">Team <img id="stats" src="../../assets/images/table.svg"></a>
+       <a class="inactive" id="About">About</a>
+  </div>
+
+  <div id="header">
+    <h1 class="header-text"> NR </h1>
+    <img id="logo" src="../images/hornetslogo.png"/>
+    <h1 class="header-text"> Hornets Stats </h1>
+    <div id="buttons">
+
+    </div>
+  </div>
+  <hr>
+<body>
+  <h1>Update Stats</h1>
+
+        <form name="StatsForm">
+            <div class="form-group">
+                <label for="fname">Player First Name</label>
+                <input type="text" class="form-control" name="fname" placeholder="Enter player first name"></input>
+            </div>
+            <div class="form-group">
+                <label for="lname">Player Last Name</label>
+                <input type="text" class="form-control" name="lname" placeholder="Enter player last name"></input>
+            </div>
+            <div class="form-group">
+                <label for="ssog">SOG</label>
+                <input type="text" class="form-control" name="ssog" placeholder="Enter shots on goal"></input>
+            </div>
+            <div class="form-group">
+                <label for="sgs">GS</label>
+                <input type="text" class="form-control" name="sgs" placeholder="Enter goals scored"></input>
+            </div>
+            <div class="form-group">
+              <label for="sasst">Assists</label>
+              <input type="text" class="form-control" name="sage" pattern="[0-9]{1,3}$" placeholder="Enter assists"></input>
+            </div>
+            <div class="form-group">
+                <label for="spass">Passes</label>
+                <input type="text" class="form-control" name="spass" pattern="[0-9]{1,3}$" placeholder="Enter passes made"></input>
+            </div>
+            <hr class="bar">
+            <div class="form-group">
+                <label for="sds">DS</label>
+                <input type="text" class="form-control" name="sds" pattern="[0-9]{1,3}$" placeholder="Enter defensive stops"></input>
+            </div>
+            <div class="form-group">
+                <label for="sstl">Steals</label>
+                <input type="text" class="form-control" name="sstl" pattern="[0-9]{1,3}$" placeholder="Enter steals"></input>
+            </div>
+            <div class="form-group">
+                <label for="sclr">Clears</label>
+                <input type="text" class="form-control" name="sclr" pattern="[0-9]{1,3}$" placeholder="Enter clears"></input>
+            </div>
+            <div class="form-group">
+                <label for="sfoul">Fouls</label>
+                <input type="text" class="form-control" name="sfoul" pattern="[0-9]{1,3}$" placeholder="Enter fouls"></input>
+            </div>
+            <hr class="bar">
+            <div class="form-group">
+              <button type="reset" value="Clear Form" class="btn btn-primary">Clear Form</button>
+              <button type="submit" value="Submit" name="Submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+
+</body>
+
+
+
+
+</html>

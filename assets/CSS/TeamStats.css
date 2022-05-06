@@ -32,9 +32,11 @@ body{
 
 #key {
   text-align: left;
-  margin-top: -3%;
   margin-left: 50%;
   border: 4px solid #000;
+  position: absolute;
+  width: 45%;
+  background-color: #9cf797;
 
 }
 
@@ -45,4 +47,131 @@ body{
 h2 {
   padding-left: 5px;
   padding-right: 5px;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #07124a;
+  display: inline-flex;
+  margin-left: 78%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #a5e3fa;
+  color: black;
+}
+
+.topnav a:hover #stats{
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #f7df5e;
+  color: black;
+}
+
+#stats {
+  vertical-align: middle;
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(137deg) brightness(104%) contrast(101%);
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  position: absolute;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  display: block;
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f7df5e;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #a5e3fa;}
+
+/* Dropdown Button */
+.dropbtn {
+  display: block;
+  background-color: #07124a;
+  border: 2px solid #07124a;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 26px;
+  font-size: 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 160px;
+}
+
+.dropbtn:hover{
+  background-color: #a5e3fa;
+  color: black;
+}
+
+#table {
+  margin-top: 5%;
+  border: 6px solid black;
+  width: 35%;
+  background-color: #ffea7a;
+}
+
+#stats_tb {
+  padding: 10px;
+}
+
+th {
+  padding: 2px;
+  font-size: 20px;
+}
+
+td {
+  padding: 6px;
+  font-size: 20px;
+  font-weight: bolder;
+
+}
+
+.value {
+  border: 2px solid black;
 }

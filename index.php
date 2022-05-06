@@ -27,7 +27,7 @@
   <hr>
   <!–– up to here is the header of the webpage, everything below here goes into a different div ––>
 
-    <img id="soccer_field" src="./assets/images/soccer_field_starters.png" onmouseover="hover(this);" onmouseout="unhover(this);">
+
     <div id="left">
 
       <button class="left-button" type="button" id="button_players" >Player Stats</button>
@@ -37,16 +37,11 @@
       <button class="dropbtn" id="button_team" >Team Stats</button>
 
     </div>
-
-    <div id="images">
-      <img id="soccer_one" src="./assets/images/soccer_one.gif">
-      <img id="soccer_two" src="./assets/images/soccer_two.gif">
-    </div>
-
+    <! Dropdown button––>
 
     <script src="main.js" charset="utf-8"></script>
     <! links main.js––>
-
+    <?php include("./includes/footer.html"); ?>
     <div class="footer">
     </div>
     <! adds a footer––>
